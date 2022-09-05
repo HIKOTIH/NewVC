@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class Player {
     private static final Pack pack = new Pack();
-    private final ArrayList<Card> deal = new ArrayList<Card>();
+    private final ArrayList<Card> deal = new ArrayList<>();
     private final int playerID;
     private int point;
 
@@ -27,22 +27,18 @@ public class Player {
     }
 
     public String showCards() {
-        String result = "";
+        StringBuilder result = new StringBuilder();
         int value = 0;
         for (Card i : deal) {
-            result += i.getNameOfCard();
+            result.append(i.getNameOfCard());
             value += i.getValueOfCard();
         }
         return "У вас карты  : " + "\n" + result + "в сумме вы набрали " + value + " очков";
 
     }
 
-    public static Comparator<Player> pointComparator = new Comparator<Player>() {
-        //Override
-        public int compare(Player o1, Player o2) {
-            return o2.point - o1.point;
-        }
-    };
+    //Override
+    public static Comparator<Player> pointComparator = (o1, o2) -> o2.point - o1.point;
 
     @Override
     public String toString() {

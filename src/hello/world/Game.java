@@ -25,7 +25,7 @@ public class Game {
         System.out.println();
         firstRound();
         setOfCards();
-        winnerChoise();
+        winnerChoice();
     }
 
     public void firstRound() {
@@ -73,7 +73,7 @@ public class Game {
         }
     }
 
-    public void winnerChoise() {
+    public void winnerChoice() {
 
         gameTeam.sort(Player.pointComparator);
         int j = 1;
