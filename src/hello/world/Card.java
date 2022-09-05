@@ -1,18 +1,18 @@
 package hello.world;
 
 
-enum Suits {Heart, Diamond, Club, Spade}
+enum Suits {HEART, DIAMOND, CLUB, SPADE}
 
 enum Ranks {
-    Ace(11),
-    King(4),
-    Queen(3),
-    Jack(2),
-    Ten(10),
-    Nine(9),
-    Eight(8),
-    Seven(7),
-    Six(6);
+    ACE(11),
+    KING(4),
+    QUEEN(3),
+    JACK(2),
+    TEN(10),
+    NINE(9),
+    EIGHT(8),
+    SEVEN(7),
+    SIX(6);
 
 
     private final int point;
@@ -34,16 +34,16 @@ public class Card {
     public Card(int newSuit, int newRank) {
         switch (newSuit) {
             case 0:
-                suit = Suits.Heart;
+                suit = Suits.HEART;
                 break;
             case 1:
-                suit = Suits.Diamond;
+                suit = Suits.DIAMOND;
                 break;
             case 2:
-                suit = Suits.Club;
+                suit = Suits.CLUB;
                 break;
             case 3:
-                suit = Suits.Spade;
+                suit = Suits.SPADE;
                 break;
             default:
                 suit = null;
@@ -51,31 +51,31 @@ public class Card {
         }
         switch (newRank) {
             case 0:
-                rank = Ranks.Ace;
+                rank = Ranks.ACE;
                 break;
             case 1:
-                rank = Ranks.King;
+                rank = Ranks.KING;
                 break;
             case 2:
-                rank = Ranks.Queen;
+                rank = Ranks.QUEEN;
                 break;
             case 3:
-                rank = Ranks.Jack;
+                rank = Ranks.JACK;
                 break;
             case 4:
-                rank = Ranks.Six;
+                rank = Ranks.SIX;
                 break;
             case 5:
-                rank = Ranks.Seven;
+                rank = Ranks.SEVEN;
                 break;
             case 6:
-                rank = Ranks.Eight;
+                rank = Ranks.EIGHT;
                 break;
             case 7:
-                rank = Ranks.Nine;
+                rank = Ranks.NINE;
                 break;
             case 8:
-                rank = Ranks.Ten;
+                rank = Ranks.TEN;
                 break;
             default:
                 rank = null;
