@@ -6,7 +6,7 @@ import java.sql.*;
 
 public class DBUtil {
 
-    private static final String JDBC_DRIVER = "org.h2.Driver";
+    private static final String JDBC_DRIVER1 = "org.h2.Driver";
     private static final String DB_URL = "jdbc:h2:./dbstair01";
 
 
@@ -19,7 +19,7 @@ public class DBUtil {
     private static void dbConnect () throws SQLException, ClassNotFoundException {
 
         try {
-            Class.forName (JDBC_DRIVER);
+            Class.forName (JDBC_DRIVER1);
         } catch (ClassNotFoundException e) {
             e.printStackTrace ();
             throw e;
