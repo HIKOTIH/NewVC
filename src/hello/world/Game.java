@@ -79,7 +79,7 @@ public class Game {
         int j = 1;
         for (Player i : gameTeam) {
 
-            System.out.println(j + " место занял " + i.toString() + "с колличеством очков " + i.getPointSumm());
+            System.out.println(j + " место занял " + i.toString() + " с колличеством очков " + i.getPointSumm());
             j = j + 1;
         }
         System.exit(0);
