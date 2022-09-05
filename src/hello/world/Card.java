@@ -1,9 +1,9 @@
 package hello.world;
 
 
-enum suits {Heart, Diamond, Club, Spade}
+enum Suits {Heart, Diamond, Club, Spade}
 
-enum ranks {
+enum Ranks {
     Ace(11),
     King(4),
     Queen(3),
@@ -17,7 +17,7 @@ enum ranks {
 
     private final int point;
 
-    ranks(int newPoint) {
+    Ranks(int newPoint) {
         this.point = newPoint;
     }
 
@@ -28,22 +28,22 @@ enum ranks {
 
 
 public class Card {
-    private final suits suit;
-    private final ranks rank;
+    private final Suits suit;
+    private final Ranks rank;
 
     public Card(int newSuit, int newRank) {
         switch (newSuit) {
             case 0:
-                suit = suits.Heart;
+                suit = Suits.Heart;
                 break;
             case 1:
-                suit = suits.Diamond;
+                suit = Suits.Diamond;
                 break;
             case 2:
-                suit = suits.Club;
+                suit = Suits.Club;
                 break;
             case 3:
-                suit = suits.Spade;
+                suit = Suits.Spade;
                 break;
             default:
                 suit = null;
@@ -51,31 +51,31 @@ public class Card {
         }
         switch (newRank) {
             case 0:
-                rank = ranks.Ace;
+                rank = Ranks.Ace;
                 break;
             case 1:
-                rank = ranks.King;
+                rank = Ranks.King;
                 break;
             case 2:
-                rank = ranks.Queen;
+                rank = Ranks.Queen;
                 break;
             case 3:
-                rank = ranks.Jack;
+                rank = Ranks.Jack;
                 break;
             case 4:
-                rank = ranks.Six;
+                rank = Ranks.Six;
                 break;
             case 5:
-                rank = ranks.Seven;
+                rank = Ranks.Seven;
                 break;
             case 6:
-                rank = ranks.Eight;
+                rank = Ranks.Eight;
                 break;
             case 7:
-                rank = ranks.Nine;
+                rank = Ranks.Nine;
                 break;
             case 8:
-                rank = ranks.Ten;
+                rank = Ranks.Ten;
                 break;
             default:
                 rank = null;
