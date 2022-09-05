@@ -33,53 +33,29 @@ public class Card {
 
     public Card(int newSuit, int newRank) {
         switch (newSuit) {
-            case 0:
-                suit = Suits.HEART;
-                break;
-            case 1:
-                suit = Suits.DIAMOND;
-                break;
-            case 2:
-                suit = Suits.CLUB;
-                break;
-            case 3:
-                suit = Suits.SPADE;
-                break;
-            default:
+            case 0 -> suit = Suits.HEART;
+            case 1 -> suit = Suits.DIAMOND;
+            case 2 -> suit = Suits.CLUB;
+            case 3 -> suit = Suits.SPADE;
+            default -> {
                 suit = null;
                 System.out.println("а колода то паленая!!!");
+            }
         }
         switch (newRank) {
-            case 0:
-                rank = Ranks.ACE;
-                break;
-            case 1:
-                rank = Ranks.KING;
-                break;
-            case 2:
-                rank = Ranks.QUEEN;
-                break;
-            case 3:
-                rank = Ranks.JACK;
-                break;
-            case 4:
-                rank = Ranks.SIX;
-                break;
-            case 5:
-                rank = Ranks.SEVEN;
-                break;
-            case 6:
-                rank = Ranks.EIGHT;
-                break;
-            case 7:
-                rank = Ranks.NINE;
-                break;
-            case 8:
-                rank = Ranks.TEN;
-                break;
-            default:
+            case 0 -> rank = Ranks.ACE;
+            case 1 -> rank = Ranks.KING;
+            case 2 -> rank = Ranks.QUEEN;
+            case 3 -> rank = Ranks.JACK;
+            case 4 -> rank = Ranks.SIX;
+            case 5 -> rank = Ranks.SEVEN;
+            case 6 -> rank = Ranks.EIGHT;
+            case 7 -> rank = Ranks.NINE;
+            case 8 -> rank = Ranks.TEN;
+            default -> {
                 rank = null;
                 System.out.println("А колода то паленая!!!");
+            }
         }
     }
 
