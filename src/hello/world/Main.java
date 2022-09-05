@@ -1,4 +1,4 @@
-package com.gumenniy.stair;
+package hello.world;
 
 
 import com.gumenniy.stair.sqlFunc.SQLBuilder;
