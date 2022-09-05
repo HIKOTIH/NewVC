@@ -1,7 +1,7 @@
 package test;
 
-import com.magdi.stair.models.Order;
-import com.magdi.stair.dao.impl.OrderDAO;
+import com.gumenniy.stair.models.Order;
+import com.gumenniy.stair.dao.impl.OrderDAO;
 import javafx.collections.ObservableList;
 import org.junit.Assert;
 

@@ -1,8 +1,8 @@
 package test;
 
-import com.magdi.stair.models.Client;
-import com.magdi.stair.dao.ClientInterface;
-import com.magdi.stair.dao.impl.ClientDAO;
+import com.gumenniy.stair.models.Client;
+import com.gumenniy.stair.dao.ClientInterface;
+import com.gumenniy.stair.dao.impl.ClientDAO;
 import org.junit.Assert;
 import org.junit.Test;
 

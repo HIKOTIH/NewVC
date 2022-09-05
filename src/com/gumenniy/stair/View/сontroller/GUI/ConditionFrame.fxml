@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.gumenniy.stair.View.сontroller.ConditionFrame">
+   <children>
+      <SplitPane dividerPositions="0.10028653295128939" orientation="VERTICAL" prefHeight="700.0" prefWidth="1200.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <Button fx:id="reload" layoutX="81.0" layoutY="21.0" mnemonicParsing="false" onAction="#refresh" prefHeight="25.0" prefWidth="288.0" text="Обновить" textFill="#3d7543" />
+                  <Button fx:id="upgrade" layoutX="774.0" layoutY="21.0" mnemonicParsing="false" onAction="#checkDone" prefHeight="25.0" prefWidth="332.0" text="Выполнено" textFill="#eb1717" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="OrderListTable" editable="true" prefHeight="625.0" prefWidth="1200.0">
+                    <columns>
+                      <TableColumn fx:id="DateOfOrder" prefWidth="163.0" text="Дата" />
+                      <TableColumn fx:id="CustomerName" prefWidth="452.0" text="Заказчик" />
+                        <TableColumn fx:id="boxSize" prefWidth="323.0" text="Размер" />
+                        <TableColumn fx:id="quont" prefWidth="170.0" text="Колличество" />
+                        <TableColumn fx:id="ChekDone" prefWidth="90.0" text="Готовность" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
