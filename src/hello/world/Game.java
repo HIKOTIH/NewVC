@@ -1,11 +1,14 @@
 package hello.world;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class Game {
-    private final ArrayList<Player> gameTeam = new ArrayList<Player>();
+    private final List<Player> gameTeam;
+
+    public Game(List<Player> gameTeam) {
+        this.gameTeam = gameTeam;
+    }
 
     public void startGame() {
         System.out.println("Вы присоединились к игре 21");
@@ -23,7 +26,6 @@ public class Game {
         firstRound();
         setOfCards();
         winnerChoise();
-
     }
 
     public void firstRound() {
@@ -31,7 +33,7 @@ public class Game {
         System.out.println();
         for (Player i : gameTeam) {
             i.getOneMoreCard();
-            System.out.println(i.toString() + " вы получаете карту");
+            System.out.println(i + " вы получаете карту");
             System.out.println(i.showCards());
             System.out.println();
             System.out.println();
@@ -48,17 +50,17 @@ public class Game {
                 System.out.println("Если ДА, введите Y , если нет, введите любой другой символ");
                 Scanner sc = new Scanner(System.in);
                 String answ = sc.nextLine();
-                if (answ.toUpperCase().equals("Y")) {
+                if (answ.equalsIgnoreCase("Y")) {
                     i.getOneMoreCard();
                     System.out.println(i.showCards());
                     if (i.getPointSumm() >= 22) {
-                        System.out.println(i.toString() + " вы набрали больше 22 очков и проиграли");
+                        System.out.println(i + " вы набрали больше 22 очков и проиграли");
                         check = check - 1;
                         gameTeam.remove(i);
                         break;
                     }
                     if (i.getPointSumm() == 21) {
-                        System.out.println(i.toString() + " вы набрали 21 очко и выиграли!");
+                        System.out.println(i + " вы набрали 21 очко и выиграли!");
                         System.exit(0);
                     } else {
                         System.out.println();
