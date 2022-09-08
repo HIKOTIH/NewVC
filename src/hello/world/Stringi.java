@@ -7,7 +7,7 @@ public class Stringi {
         String f = " = ";
         String g = "class";
 
-        System.out.println(d+f+g);
-        System.out.println("My number is "+ x);
+        System.out.println(d + f + g);
+        System.out.println("My number is " + x);
     }
 }
