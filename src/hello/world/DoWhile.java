@@ -8,9 +8,9 @@ public class DoWhile {
         System.out.println("Введи 5");
         int value = scanner.nextInt();
         while(value!=5){
-            System.out.println("Другое 5");
+            System.out.println("Другое 5 дебилл!");
             value = scanner.nextInt();
         }
-        System.out.println("Вы нашли кнопку 5, поздравляю!");
+        System.out.println("Ты нашёл кнопку 5, поздравляю!");
     }
 }
