@@ -1,4 +1,4 @@
-package hello.world;
+package Lesson1Alishev;
 
 public class If {
     public static void main(String[] args) {

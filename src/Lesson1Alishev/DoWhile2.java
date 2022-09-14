@@ -1,4 +1,4 @@
-package hello.world;
+package Lesson1Alishev;
 import java.util.Scanner;
 
 public class DoWhile2 {

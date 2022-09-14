@@ -1,4 +1,4 @@
-package hello.world;
+package Lesson1Alishev;
 
 public class Stringi {
     public static void main(String[] args) {

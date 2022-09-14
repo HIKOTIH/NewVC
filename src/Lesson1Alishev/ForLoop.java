@@ -1,4 +1,4 @@
-package hello.world;
+package Lesson1Alishev;
 
 public class ForLoop {
     public static void main(String[] args) {
