@@ -1,7 +1,7 @@
 package Lesson1Alishev;
 
 public class IntVrapper {
-    int value;
+    private int value;
 
     public IntVrapper(int value) {
         this.value = value;
