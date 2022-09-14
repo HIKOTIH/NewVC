@@ -81,7 +81,7 @@ public class Arrays {
         // !!!! основное отличие примитивов от ссылочных
 
         int primitiv = 1;
-        IntVrapper notPrimitive = new IntVrapper(1);
+        IntWrapper notPrimitive = new IntWrapper(1);
 
         Service service = new Service();
         // во всех случаях мы ОТСЮДА берем берем 2 переменных , примитивную и не примитивную и передаем их в метод который их емняет
