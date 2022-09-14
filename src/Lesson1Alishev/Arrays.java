@@ -106,11 +106,11 @@ public class Arrays {
         Object s3  = "someString";
 
         if (s3 instanceof String) {
-            System.out.println(i1 +" стринг");
+            System.out.println(s3 +" стринг");
         }
 
         if (s3 instanceof Integer) {
-            System.out.println(i1 + " инт");
+            System.out.println(s3 + " инт");
         }
     }
 
