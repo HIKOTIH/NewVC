@@ -2,10 +2,10 @@ package hello.world;
 
 public class Variables {
     public static void main(String[] args) {
-        int newInt = 2525;
+        int newInt = 252525252;
 
         short newShort = 3434;
-        long newLng = 25252525;
+        long newLng = 252525252;
 
         char a = 'b';
         boolean b = true;
@@ -15,6 +15,6 @@ public class Variables {
 
         byte newByte = 127; // -128 127
 
-        System.out.println(newLng);
+        System.out.println(newInt);
     }
 }
